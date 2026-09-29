@@ -1,0 +1,95 @@
+* {
+    border:        none;
+    border-radius: 0;
+    font-family:   "MesloLGD Nerd Font", monospace;
+    font-size:     13px;
+    box-shadow:    none;
+    /* light glow keeps black text legible on a dark transparent bar */
+    text-shadow:   0 0 2px rgba(255, 255, 255, 0.85);
+    transition-duration: 0s;
+    color:         #000000;
+}
+
+window {
+    background: rgba(0, 0, 0, 0);
+}
+
+/*-----rounded window + module groups-----*/
+#window,
+window {
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0);
+}
+
+.modules-left {
+    margin: 0;
+    background-color: transparent;
+}
+
+.modules-center {
+    background-color: transparent;
+    margin: 0;
+}
+
+.modules-right {
+    background-color: transparent;
+    margin: 0;
+}
+
+/*-----modules-----*/
+#workspaces button {
+    padding: 1px 5px;
+    background-color: transparent;
+}
+
+#workspaces button:hover {
+    box-shadow: inherit;
+    background-color: rgba(0, 153, 153, 1);
+}
+
+#workspaces button.focused {
+    background-color: rgba(0, 43, 51, 0.85);
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#tray,
+#mode,
+#backlight,
+#custom-power,
+#custom-lock,
+#custom-uptime,
+#custom-weather,
+#custom-scratchpad-indicator,
+#idle_inhibitor {
+    padding: 0 10px;
+}
+
+#mode {
+    color: #cc3436;
+    font-weight: bold;
+}
+
+#custom-lock {
+    background-color: rgba(0, 119, 179, 0.6);
+    border-radius: 100px;
+    margin: 5px 5px;
+    padding: 1px 6px;
+}
+
+/*-----indicators-----*/
+#battery.charging {
+    color: #2dcc36;
+}
+
+#battery.warning:not(.charging) {
+    color: #e6e600;
+}
+
+#battery.critical:not(.charging) {
+    color: #cc3436;
+}

@@ -1,0 +1,10 @@
+[Unit]
+Description=CloudNine daily plan reminder
+After=graphical-session.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 %h/Repositories/CloudNine/plan/plan.py notify
+Environment=DISPLAY=:0
+Environment=XDG_RUNTIME_DIR=%t
+Environment=WAYLAND_DISPLAY=wayland-1

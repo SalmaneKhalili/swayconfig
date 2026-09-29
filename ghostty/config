@@ -1,0 +1,10 @@
+# Ghostty config
+# https://ghostty.org/docs/config/reference
+
+# Ghostty resolves the Regular/Bold/Italic/Bold-Italic faces from the family
+# name automatically, so one line is enough.
+#
+# Nerd Font glyphs (U+E000-U+F8FF) are what nvim-web-devicons and NvChad's
+# file/LSP icons draw. Without a patched font those render as tofu boxes.
+# Installed at ~/.local/share/fonts/NerdFonts/ and registered with fontconfig.
+font-family = MesloLGLDZ Nerd Font Mono

@@ -1,0 +1,12 @@
+# Image
+# swaylock does not expand $HOME - this must be an absolute path.
+# Change the username if you are not 'salmane'.
+image=/home/salmane/.config/sway/wallpaper.jpg
+scaling=fill
+
+# Indicator
+ignore-empty-password
+indicator-caps-lock
+
+# Behavior
+show-failed-attempts

@@ -15,7 +15,7 @@
 	set $slow 10
 
 	# Preferred terminal emulator
-	set $term kitty
+	set $term ghostty
 
 	# Screensaver
 
@@ -126,10 +126,10 @@ exec swayidle -w \
     bindsym $mod+q exec qutebrowser
 
     # Explorer
-    bindsym $mod+n exec kitty --class=ranger sh -c "source ~/.zshrc & source ranger"
+    bindsym $mod+n exec $term --class=ranger ranger
 
 	# spotify-tui
-	# bindsym $mod+s exec kitty --class=spotify -e "spt"
+	# bindsym $mod+s exec $term --class=spotify -e "spt"
 
 ### Moving around:
     # Move your focus around

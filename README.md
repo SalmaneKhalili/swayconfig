@@ -43,10 +43,9 @@ with [Waybar](https://github.com/Alexays/Waybar) as the status bar and
 #### Bar, launcher and session tools
 * [**waybar**](waybar/): status bar. Transparent background, rounded floating bar. Modules: workspaces, window mode, clock, weather, volume, uptime, backlight, battery, network, cpu, memory, tray, scratchpad and lock.
 * [**waybar**/scripts/weather-stats](waybar/scripts/weather-stats/): a small Go program that queries [wttr.in](https://wttr.in) for the weather module. Source is tracked; the compiled binary is not — see below.
-* [**fuzzel**](fuzzel/): application launcher, bound to `Mod+d` and `Mod+space`.
+* [**fuzzel**](fuzzel/): the application launcher, bound to `Mod+d` and `Mod+space`.
 * [**swaylock**](swaylock/): screen locker.
 * [**wlogout**](wlogout/): logout / power off menu.
-* [**wofi**](wofi/): general purpose menu, used as an application fallback and wallpaper picker.
 * [**swappy**](swappy/): screenshot GUI, driven by `grim` and `slurp`.
 * [**sworkstyle**](sworkstyle/): expands windows with mouse gestures.
 
@@ -55,7 +54,7 @@ with [Waybar](https://github.com/Alexays/Waybar) as the status bar and
 * [**envman**](envman/): generates `fish/load.fish`, which `config.fish` sources. Machine-specific environment, generated rather than committed.
 
 #### Terminals
-* [**ghostty**](ghostty/), [**alacritty**](alacritty/). Sway's default terminal is `kitty`, configured in `sway/config` via `set $term kitty`.
+* [**ghostty**](ghostty/): the terminal. Sway's `set $term` points here, so `Mod+Return` and the ranger binding both open it.
 
 #### Applications
 * [**lazygit**](lazygit/): terminal UI for git.
@@ -67,8 +66,8 @@ with [Waybar](https://github.com/Alexays/Waybar) as the status bar and
 #### Not tracked
 Application data is excluded by [`.gitignore`](.gitignore): `discord/`,
 `mozilla/`, `JetBrains/`, `obsidian/`, `vesktop/` and similar, plus generated
-files (`fish/fish_variables`, `pulse/cookie`), the compiled weather binary, and
-`gh/hosts.yml`, which contains GitHub OAuth tokens.
+files (`fish/fish_variables`, `pulse/cookie`, `QtProject.conf`), the compiled
+weather binary, and `gh/hosts.yml`, which contains GitHub OAuth tokens.
 
 ### Keybindings
 `Mod` is the Super key. The authoritative list is in
@@ -94,7 +93,7 @@ files (`fish/fish_variables`, `pulse/cookie`), the compiled weather binary, and
 | `Mod+minus` | Show the scratchpad |
 | `Mod+Shift+minus` | Move the window to the scratchpad |
 | `Mod+Shift+f` | Firefox |
-| `Mod+n` | Ranger in a kitty window |
+| `Mod+n` | Ranger in a terminal window |
 
 ### Usage
 `sway/config` expands `$HOME` itself, and Waybar passes `exec` through a shell,
@@ -118,8 +117,8 @@ the bar is unaffected.
 1) Install the required packages. On Arch:
 ```bash
 sudo pacman -S sway swayfx swaylock swayidle waybar fuzzel wlogout mako \
-  sworkstyle fish grim slurp swappy light playerctl pavucontrol \
-  nm-applet blueman-applet foot
+  sworkstyle fish ghostty grim slurp swappy light playerctl pavucontrol \
+  nm-applet blueman-applet
 ```
 
 2) Clone into place

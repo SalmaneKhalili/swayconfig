@@ -63,12 +63,6 @@ with [Waybar](https://github.com/Alexays/Waybar) as the status bar and
 * [**systemd**](systemd/): user units, currently a daily `plan-notify` timer.
 * [**mimeapps.list**](mimeapps.list): default application per MIME type.
 
-#### Not tracked
-Application data is excluded by [`.gitignore`](.gitignore): `discord/`,
-`mozilla/`, `JetBrains/`, `obsidian/`, `vesktop/` and similar, plus generated
-files (`fish/fish_variables`, `pulse/cookie`, `QtProject.conf`), the compiled
-weather binary, and `gh/hosts.yml`, which contains GitHub OAuth tokens.
-
 ### Keybindings
 `Mod` is the Super key. The authoritative list is in
 [`sway/config`](sway/config); the most used:

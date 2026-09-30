@@ -1,5 +1,5 @@
 <div align="center">
-    <h1>🏠</h1>
+    <img src="https://github.com/swaywm/sway/blob/master/assets/Sway_Logo%2BText_Ver1.svg">
 </div>
 <div align="center">
 Configuration files for my <a href="https://en.wikipedia.org/wiki/Tiling_window_manager">tiling window manager</a> / <a href="https://en.wikipedia.org/wiki/Terminal_emulator">terminal</a> based <a href="https://en.wikipedia.org/wiki/Linux">Linux</a> setup.
@@ -23,7 +23,7 @@ My [dotfiles](https://wiki.archlinux.org/title/Dotfiles), stored directly in `~/
 
 This setup is not designed to be used with a [Desktop Environment](https://wiki.archlinux.org/title/Desktop_environment). [Sway](https://github.com/swaywm/sway) (via [swayfx](https://github.com/WillPower3309/swayfx)) provides window management, with [Waybar](https://github.com/Alexays/Waybar) as the status bar and [fuzzel](https://github.com/junegunn/fuzzel) as the launcher.
 
-`nvim/` is a separate repository. See [nvim/README.md](nvim/README.md).
+`nvim/` is a separate repository. See [nvim/README.md](https://github.com/SalmaneKhalili/nvim).
 
 ### Structure
 The majority of this setup is stored across the following folders:

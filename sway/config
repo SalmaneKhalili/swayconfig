@@ -84,7 +84,7 @@ exec swayidle -w \
 
     # Screenshot
     # bindsym $mod+p exec grim -g "$(slurp)" $HOME/Documents/Pictures/Screenshots/$(date +'screenshot_%y-%m-%d-%H:%M.png')
-    bindsym $mod+p exec grim -g "$(slurp)" - | swappy -f -
+    bindsym Print exec grim -g "$(slurp)" - | swappy -f -
     bindsym XF86Pictures exec grim -g "$(slurp)" - | swappy -f -
 
     # Leds

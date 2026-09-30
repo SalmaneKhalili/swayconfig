@@ -8,3 +8,4 @@
 # file/LSP icons draw. Without a patched font those render as tofu boxes.
 # Installed at ~/.local/share/fonts/NerdFonts/ and registered with fontconfig.
 font-family = MesloLGLDZ Nerd Font Mono
+background-opacity = 0.88

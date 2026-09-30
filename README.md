@@ -10,6 +10,8 @@ Configuration files for my <a href="https://en.wikipedia.org/wiki/Tiling_window_
   <span> • </span>
        	<a href="#structure">Structure</a>
   <span> • </span>
+		<a href="#Screenshots">Screeenshots</a>
+  <span> • </span>
 	<a href="#keybindings">Keybindings</a>
   <span> • </span>
        	<a href="#usage">Usage</a>
@@ -24,6 +26,15 @@ My [dotfiles](https://wiki.archlinux.org/title/Dotfiles), stored directly in `~/
 This setup is not designed to be used with a [Desktop Environment](https://wiki.archlinux.org/title/Desktop_environment). [Sway](https://github.com/swaywm/sway) (via [swayfx](https://github.com/WillPower3309/swayfx)) provides window management, with [Waybar](https://github.com/Alexays/Waybar) as the status bar and [fuzzel](https://github.com/junegunn/fuzzel) as the launcher.
 
 `nvim/` is a separate repository. See [nvim/README.md](https://github.com/SalmaneKhalili/nvim).
+
+### Screenshots
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/12e95dfa-9988-476b-91c8-caf2a6afb7f3" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/72d0d756-d78d-4f84-b5c2-c8dd5f7153e6" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1fa0bda7-03aa-40f3-a38c-e7b317827886" />
+
 
 ### Structure
 The majority of this setup is stored across the following folders:
